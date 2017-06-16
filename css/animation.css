@@ -1,0 +1,37 @@
+@charset "utf-8";
+/*第一屏及公共*/
+.header{transform: translate(0,-60px); opacity: 0;}
+.screen_1_title,.screen_2_title,.screen_3_title,.screen_3_sec_2,.screen_4_title,.screen_5_title{transform: translate(0,100px); opacity: 0;}
+.screen_1_title_done,.screen_2_title_done,.screen_3_title_done,.screen_4_title_done,.screen_5_title_done{transform: none; opacity: 1; transition: all .8s;}
+.screen_1_sub_title,.screen_2_sub_title,.screen_3_sub_title,.screen_4_sub_title,.screen_5_sub_title{transform: translate(0,35px); opacity: 0;}
+.header_done,.screen_1_sub_title_done,.screen_2_sub_title_done,.screen_3_sub_title_done,.screen_4_sub_title_done,.screen_5_sub_title_done{transform: none; opacity: 1; transition: all .8s .4s;}
+/*第二屏*/
+.screen_2_sec_1{opacity: 0}
+.screen_2_sec_2{opacity: 0}
+.screen_2_sec_1_done{opacity: 1;transition: all 1s 1s;}
+.screen_2_sec_2_done{opacity: 1; transform:none; animation: move 1s 1.5s 1; transition:all .5s 1.5s;}
+@keyframes move{
+	from{top:300px;}
+	25%{top:205px;}
+	50%{top:215px;}
+	75%{top:210px;}
+	to{top:212px;}
+}
+/*第三屏*/
+.screen_3_sec_1{transform:scale(0.2);}
+.screen_3_sec_1_done{transform: none;transition:all .5s;}
+.screen_3_sec_2_done{opacity: 1; transform: none;transition:all .5s 1s; animation: move1 0.5s 1.5s 1;}
+@keyframes move1{
+	from{top:515px;}
+	40%{top:525px;}
+	80%{top:520px;}
+	to{top:525px;}
+}
+/*第四屏*/
+.screen_4_sec_1,.screen_4_sec_2,.screen_4_sec_3,.screen_4_sec_4{transform: scale(0.1);}
+.screen_4_sec_1_done,.screen_4_sec_2_done,.screen_4_sec_3_done,.screen_4_sec_4_done{transform: none; transition: all .6s}
+/*第五屏*/
+.screen_5_sec{transform:scale(0.1);}
+.screen_5_sec_done{transform:none;transition: all 1s;}
+
+
